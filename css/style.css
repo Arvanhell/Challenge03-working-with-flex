@@ -1,0 +1,142 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+body {
+     font-size: 16px; 
+}
+/* footer {
+
+} */
+/******************************************
+/* fonts styles and additional colors
+/*******************************************/
+     h1,h2,h3,h4,h5,h6,p,button {
+     font-family: 'Roboto', sans-serif;
+}
+
+    .container__text h1 {
+     font-size: 3rem;
+     font-weight: 900;
+     max-width: 50%;
+     margin-left: 10%;
+     color: white;
+     
+}
+     .container__text p {
+     font-size: 1.2rem;
+     max-width: 50%;
+     letter-spacing: 0.1rem;
+     overflow: hidden;
+     margin-left: 10%;
+     color: white;
+
+    
+}
+
+.article__text p {
+     color: black;
+     text-align: center;
+}
+
+.article__text h2 {
+     font-size: 2.1rem;
+     font-weight: 900;
+     color: #87629A;
+     text-align: center;
+}
+
+.section__text p {
+     color: white;
+     text-align: center;
+     margin: 0 auto;
+     width: 60%;
+}
+
+.section__text h2 {
+     font-size: 2.1rem;
+     font-weight: 900;
+     color: white;
+     text-align: center;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+.container{
+     background-color: #23424A;
+     padding: 2em 0 ;
+}
+
+.article__cont{
+     display: flex;
+     padding: 3.2rem 0;
+     width: 80%;
+     margin: 0 auto;
+}
+
+.article__text + .article__text{
+     margin-left: 3em;
+}
+
+.section__sell {
+     width: 100%;
+     padding: 3em 0;
+     display: flex;
+     background-color: #136C72;
+}
+
+.section__text {
+     width: 80%;
+     margin: 0 auto;
+ }
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+     
+button {
+     padding: 0.9rem 2.5rem;
+     margin: 1% 0 0 10%;
+     background-color: #38CFD9;
+     border-radius: 1.8rem;
+}
+
+
+     .btn:hover,
+     .btn:focus {
+     opacity: .75; 
+     background: linear-gradient(30deg,white, #55dce5, white); 
+ }
+
+
+    a:hover{
+     color: #541c71;
+    }
+
+a {
+     font-size: 1rem;
+     text-decoration: none;
+     color: black;
+     font-weight: bold;
+}
+
+    
+         
