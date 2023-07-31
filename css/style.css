@@ -33,90 +33,108 @@ body {
      font-family: 'Roboto', sans-serif;
 }
 
+.container__text{
+     width: 60%;
+     display: flex;
+     flex-direction: column;
+}
+
     .container__text h1 {
      font-size: 3rem;
      font-weight: 900;
-     max-width: 50%;
+     max-width: 80%;
      margin-left: 10%;
      color: white;
      
 }
      .container__text p {
      font-size: 1.2rem;
-     max-width: 50%;
+     max-width: 80%;
      letter-spacing: 0.1rem;
      overflow: hidden;
      margin-left: 10%;
      color: white;
-
-    
-}
-
-.article__text p {
-     color: black;
-     text-align: center;
-}
-
-.article__text h2 {
-     font-size: 2.1rem;
-     font-weight: 900;
-     color: #87629A;
-     text-align: center;
-}
-
-.section__text p {
-     color: white;
-     text-align: center;
-     margin: 0 auto;
-     width: 60%;
-}
-
-.section__text h2 {
-     font-size: 2.1rem;
-     font-weight: 900;
-     color: white;
-     text-align: center;
 }
 
 /******************************************
 /* LAYOUT
 /*******************************************/
 .container{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
      background-color: #23424A;
      padding: 2em 0 ;
 }
 
-.article__cont{
+.article__home{
      display: flex;
-     padding: 3.2rem 0;
-     width: 80%;
      margin: 0 auto;
+     flex-direction: row;
+     justify-content: space-between;
 }
 
-.article__text + .article__text{
-     margin-left: 3em;
-}
-
-.section__sell {
-     width: 100%;
-     padding: 3em 0;
-     display: flex;
+.article__text{
+     margin: 5em 5em 0 0;
      background-color: #136C72;
+     padding: 2em 1em;
 }
 
-.section__text {
-     width: 80%;
-     margin: 0 auto;
- }
+.left__col{
+     padding-left: 4em;
+}
+
+.img__header{
+     padding-top: 3.2em;
+     margin-right: 5rem;
+}
+
+.img__main{
+     max-width: 100%;
+}
+
+.col + .col {
+     padding-top: 2em;
+}
+
+.col {
+    
+     text-align: center;
+     color: white;
+}
+
+.h2__lcol{
+     padding-top: 3em;
+     max-width: 90%;
+}
+
+.p__lcol{
+     padding-top: 3em;
+     max-width: 90%;
+     letter-spacing: 0.1em;
+     line-height: 1.3em;
+}
+
+.col h2 {
+   font-size: 2.3em;
+}
+
+.col p {
+     max-width: 80%;
+     text-align: center;
+     margin-left: 2em;
+     line-height: 1.5em;
+}
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
      
 button {
      padding: 0.9rem 2.5rem;
-     margin: 1% 0 0 10%;
+     margin: 2em 0 0 10%;
      background-color: #38CFD9;
      border-radius: 1.8rem;
+     max-width: 40%;
 }
 
 
@@ -138,5 +156,9 @@ a {
      font-weight: bold;
 }
 
-    
+.h2__lcol{
+     color: #136C72;
+     font-weight: 800;
+     font-size: 2rem;
+}
          
